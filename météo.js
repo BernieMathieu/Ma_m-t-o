@@ -3,6 +3,7 @@
             const city = document.getElementById('city').value;
             getWeather(city);
         });
+        button.addEvent
 
         function getWeather(city) {
             const apiKey = '96dabab0a33f07ae6558804b2120a674'; 
@@ -11,7 +12,8 @@
 
             fetch(apiUrl)
                 .then(response => response.json())
-                .then(data => {
+                .then(data => { 
+                    console.log((data));
                     displayWeather(data);
                 })
                 .catch(error => {
