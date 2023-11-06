@@ -6,7 +6,7 @@ body {
     margin: 20px auto;
     width: 300px;
     padding: 20px;
-    background: linear-gradient(to right, #2e2ee8 , #2e2ee8 , #5a5aff , #5a5aff);
+    background: linear-gradient(#7460ED , #7460ED , #7460ED , #D9D9D9);
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -15,4 +15,8 @@ input {
     outline: none;
     border-radius: 10px;
     padding: 10px;
+}
+
+h1{
+    color: white;
 }
