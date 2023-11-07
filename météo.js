@@ -1,11 +1,11 @@
-  document.getElementById('weather-form').addEventListener('submit', function(e) {
+ //évènement pour la soumission du formulaire et pour la récupération de la valeur de la ville rentrée par l'utilisateur
+ document.getElementById('weather-form').addEventListener('submit', function(e) {
             e.preventDefault();
             const city = document.getElementById('city').value;
             getWeather(city);
-            
-    
-        })
+        });
 
+// récupération des données météorologiques pour une ville donnée en utilisant une clé API
         function getWeather(city) {
             const apiKey = '96dabab0a33f07ae6558804b2120a674'; 
             //  clé API
@@ -20,9 +20,9 @@
                 .catch(error => {
                     console.error('Erreur :', error);
                 });
-
         }
 
+//Affichage des données de l'api
         function displayWeather(data) {
             
             const weatherInfo = document.getElementById('weather-info');
